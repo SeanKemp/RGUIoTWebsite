@@ -5,6 +5,7 @@
   <title>Available Parking</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="./css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body class="w3-light-grey">
   <main class="w3-light-grey">
@@ -22,12 +23,23 @@
         <ul class="w3-ul w3-border w3-white w3-center">
           <li class="w3-teal w3-xlarge w3-padding-32">Aberdeen Parking Lot</li>
           <li class="w3-padding-16">
-          <p><%= spaces %></p></li>
+          <p id="spaces"><%= spaces %></p></li>
 
         </ul>
+        <!--<button type="button" name="refresh" id="refresh">Refresh</button>-->
       </div>
     </section>
   </main>
 </body>
-
+<script>
+  /*$(document).ready(function(){
+    $("#refresh").click(function(){
+      $("#spaces").load(location.href + " #spaces");
+    });
+  });*/
+  function refresh() {
+    $("#spaces").load(location.href + " #spaces");
+  }
+  setInterval(refresh, 5000);
+</script>
 </html>

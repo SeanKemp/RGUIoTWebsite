@@ -16,7 +16,7 @@ io.on('connection', function(socket) {
     spaces = data;
     console.log(data);
   });
-
+  //socket.emit('spaces', 'test');
 });
 app.get('/', function(req, res){
 
