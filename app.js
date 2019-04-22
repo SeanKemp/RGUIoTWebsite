@@ -10,16 +10,14 @@ app.set('view engine', 'ejs');
 
 io.on('connection', function(socket) {
 
-  console.log('Client connected...')
+  console.log('Data Received')
 
   socket.on('sendSpaces', function(data) {
     spaces = data;
-    console.log(data);
   });
-  //socket.emit('spaces', 'test');
 });
-app.get('/', function(req, res){
 
+app.get('/', function(req, res){
   res.render('index', {spaces:spaces});
 });
 

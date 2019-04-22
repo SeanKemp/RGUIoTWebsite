@@ -17,26 +17,19 @@
     </header>
 
     <section class="w3-container w3-padding-large">
-      <!--<h4><b>Parking lot</b></h4>-->
       <hr>
       <div class="w3-third w3-margin-bottom">
         <ul class="w3-ul w3-border w3-white w3-center">
           <li class="w3-teal w3-xlarge w3-padding-32">Aberdeen Parking Lot</li>
           <li class="w3-padding-16">
-          <p id="spaces"><%= spaces %></p></li>
+          <p id="spaces">Available Spaces: <%= spaces %></p></li>
 
         </ul>
-        <!--<button type="button" name="refresh" id="refresh">Refresh</button>-->
       </div>
     </section>
   </main>
 </body>
 <script>
-  /*$(document).ready(function(){
-    $("#refresh").click(function(){
-      $("#spaces").load(location.href + " #spaces");
-    });
-  });*/
   function refresh() {
     $("#spaces").load(location.href + " #spaces");
   }
