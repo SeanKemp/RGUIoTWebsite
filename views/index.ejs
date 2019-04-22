@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Test</title>
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="w3-light-grey">
+  <main class="w3-light-grey">
+    <!-- Header -->
+    <header>
+      <div class="w3-container">
+        <h1 class="w3-h1">Parking Across the City</h1>
+      </div>
+    </header>
 
-  </head>
-  <body>
+    <section class="w3-container w3-padding-large" style="margin-bottom:32px">
+      <!--<h4><b>Parking lot</b></h4>-->
+      <hr>
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center">
+          <li class="w3-teal w3-xlarge w3-padding-32">Aberdeen Parking Lot</li>
+          <li class="w3-padding-16">
+          <p><%= spaces %></p></li>
 
-    <h1>Test</h1>
-    <p id="spaces"></p>
-    <p><%= spaces %></p>
-  </body>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
 
 </html>

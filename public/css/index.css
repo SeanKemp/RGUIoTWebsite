@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+main {
+  margin: 0 20%;
+}
+
+body {
+    max-width: 100%;
+    background-image: url("../img/car_park.jpg");
+    background-size: cover;
+}
+
+@media screen and (max-width: 1400px) {
+  main {
+    margin: 0 10%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    margin: 0 0%;
+  }
+}

@@ -23,5 +23,7 @@ app.get('/', function(req, res){
   res.render('index', {spaces:spaces});
 });
 
+app.use(express.static('public'));
+
 server.listen(port);
 console.log("Listening on port: " + port);
